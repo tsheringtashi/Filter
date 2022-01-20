@@ -1,0 +1,12 @@
+def filter_cities(df):
+     return df.index.str.startswith('A')|df.index.str.endswith('a')| (df.index.str.count('e'))>0)
+
+
+cities.loc[filter_cities]
+
+
+
+
+cities.loc[lambda row : row['country'].str.startswith('Can')]
+
+
