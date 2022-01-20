@@ -10,3 +10,8 @@ cities.loc[filter_cities]
 cities.loc[lambda row : row['country'].str.startswith('Can')]
 
 
+cities.loc[(cities['country') =='USA')&(cities['latitude']<40)]
+
+
+
+
